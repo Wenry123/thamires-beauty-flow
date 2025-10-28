@@ -53,7 +53,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  @dra.thamireslopes
+                  @dra.thamires
                 </a>
               </div>
             </div>

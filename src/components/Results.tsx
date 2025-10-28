@@ -59,11 +59,11 @@ const Results = () => {
             <CardContent className="p-0">
               <div className="relative">
                 {/* Image */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+                <div className="relative aspect-[4/3] overflow-hidden bg-muted group">
                   <img
                     src={results[currentIndex].image}
                     alt={results[currentIndex].title}
-                    className="w-full h-full object-contain animate-fade-in"
+                    className="w-full h-full object-contain animate-fade-in transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
@@ -71,7 +71,7 @@ const Results = () => {
                 <Button
                   variant="secondary"
                   size="icon"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 shadow-lg hover:scale-110 transition-transform"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 hover:-translate-x-1"
                   onClick={prevSlide}
                   aria-label="Anterior"
                 >
@@ -80,7 +80,7 @@ const Results = () => {
                 <Button
                   variant="secondary"
                   size="icon"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 shadow-lg hover:scale-110 transition-transform"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 hover:translate-x-1"
                   onClick={nextSlide}
                   aria-label="Próximo"
                 >

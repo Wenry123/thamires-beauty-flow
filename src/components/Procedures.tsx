@@ -65,7 +65,7 @@ const Procedures = () => {
           {procedures.map((procedure, index) => (
             <Card
               key={index}
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 animate-fade-in border-border/50"
+              className="group hover:shadow-elegant transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] animate-fade-in border-border/50 cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader>
@@ -86,7 +86,7 @@ const Procedures = () => {
               <CardFooter>
                 <Button
                   variant="ghost"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 hover:scale-105"
                   onClick={() =>
                     window.open("https://wa.me/5515996567565", "_blank")
                   }

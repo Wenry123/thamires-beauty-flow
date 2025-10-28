@@ -34,8 +34,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-card/95 backdrop-blur-md shadow-card" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-card/95 backdrop-blur-md shadow-card animate-fade-in" : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
@@ -61,7 +61,7 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
               >
                 {item.label}
               </a>
@@ -71,7 +71,7 @@ const Header = () => {
               onClick={() =>
                 window.open("https://wa.me/5515996567565", "_blank")
               }
-              className="bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90 hover:scale-105 transition-all duration-300"
             >
               Agendar WhatsApp
             </Button>

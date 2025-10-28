@@ -10,7 +10,7 @@ const CTA = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-6 animate-pulse">
             <Sparkles className="w-8 h-8 text-primary" />
           </div>
 
@@ -26,7 +26,8 @@ const CTA = () => {
           <Button
             size="lg"
             onClick={() => window.open("https://wa.me/5515996567565", "_blank")}
-            className="bg-primary hover:bg-primary/90 text-base md:text-lg px-10 py-6 shadow-elegant hover:shadow-xl transition-all hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-base md:text-lg px-10 py-6 shadow-elegant hover:shadow-xl transition-all duration-500 hover:scale-110 animate-fade-in"
+            style={{ animationDelay: "400ms" }}
           >
             Falar com a Dra. Thamires no WhatsApp
           </Button>

@@ -17,9 +17,9 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in">
-            <div className="flex gap-4 items-start">
+            <div className="flex gap-4 items-start group cursor-pointer">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 group-hover:scale-110 transition-all duration-300">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
               </div>
@@ -36,9 +36,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 items-start">
+            <div className="flex gap-4 items-start group cursor-pointer">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 group-hover:scale-110 transition-all duration-300">
                   <Instagram className="w-6 h-6 text-primary" />
                 </div>
               </div>
@@ -55,9 +55,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 items-start">
+            <div className="flex gap-4 items-start group cursor-pointer">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 group-hover:scale-110 transition-all duration-300">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
               </div>
@@ -72,9 +72,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 items-start">
+            <div className="flex gap-4 items-start group cursor-pointer">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 group-hover:scale-110 transition-all duration-300">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Contact = () => {
             <Button
               size="lg"
               onClick={() => window.open("https://wa.me/5515996567565", "_blank")}
-              className="w-full bg-primary hover:bg-primary/90 shadow-elegant"
+              className="w-full bg-primary hover:bg-primary/90 shadow-elegant hover:scale-105 hover:shadow-xl transition-all duration-300"
             >
               Agendar Avaliação pelo WhatsApp
             </Button>

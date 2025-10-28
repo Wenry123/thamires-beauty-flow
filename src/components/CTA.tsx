@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-cta relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-[#ebe6de] relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/20 rounded-full opacity-20 blur-3xl"></div>

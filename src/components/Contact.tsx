@@ -10,7 +10,8 @@ const Contact = () => {
             Entre em Contato
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Estou aqui para atendê-lo(a). Entre em contato e agende sua avaliação.
+            Estou aqui para atendê-lo(a). Entre em contato e agende sua
+            avaliação.
           </p>
         </div>
 
@@ -43,9 +44,11 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">Instagram</h3>
+                <h3 className="font-semibold text-foreground mb-1">
+                  Instagram
+                </h3>
                 <a
-                  href="https://instagram.com/dra.thamireslopes"
+                  href="https://instagram.com/dra.thamires"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -79,9 +82,12 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">Localização</h3>
+                <h3 className="font-semibold text-foreground mb-1">
+                  Localização
+                </h3>
                 <p className="text-muted-foreground">
-                  Sorocaba - SP<br />
+                  R. Luiz Canalle, 89 - Centro, Salto de Pirapora - SP, 18160-000
+                  <br />
                   Atendimento mediante agendamento
                 </p>
               </div>
@@ -89,7 +95,9 @@ const Contact = () => {
 
             <Button
               size="lg"
-              onClick={() => window.open("https://wa.me/5515996567565", "_blank")}
+              onClick={() =>
+                window.open("https://wa.me/5515996567565", "_blank")
+              }
               className="w-full bg-primary hover:bg-primary/90 shadow-elegant hover:scale-105 hover:shadow-xl transition-all duration-300"
             >
               Agendar Avaliação pelo WhatsApp
@@ -107,7 +115,7 @@ const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização Sorocaba"
+                title="R. Luiz Canalle, 89 - Centro, Salto de Pirapora - SP, 18160-000"
               ></iframe>
             </div>
           </div>
